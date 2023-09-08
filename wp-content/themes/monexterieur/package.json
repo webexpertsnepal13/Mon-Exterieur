@@ -1,0 +1,38 @@
+{
+  "name": "gulptest",
+  "version": "1.0.0",
+  "description": "this is just a test ",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/wenepal14/gulp-boilerplate"
+  },
+  "keywords": [
+    "none"
+  ],
+  "author": "wen",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.7.3",
+    "cross-env": "^6.0.3",
+    "cssnano": "^4.1.10",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-notify": "^3.2.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2",
+    "browserslist": "^4.10.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.4.1",
+    "slick-carousel": "^1.8.1"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "IE 10"
+  ]
+}

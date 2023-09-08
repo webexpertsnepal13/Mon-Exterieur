@@ -1,0 +1,65 @@
+.installation-contents {
+  margin-top: 60px;
+  @include breakpoint(small) {
+    margin: 30px -30px 0;
+  }
+  > .row {
+    margin: 0 -7.5px;
+    @include breakpoint(small) {
+      margin: 0px;
+    }
+    .col-md-4 {
+      padding: 0 7.5px;
+      @include breakpoint(small) {
+        padding: 0;
+      }
+    }
+  }
+  .installation {
+    margin-bottom: 115px;
+    border: solid 1px #e2e2e2;
+    background-color: #ffffff;
+    @include breakpoint(small) {
+      margin-bottom: 20px;
+    }
+    a {
+      display: block;
+    }
+    .img-wrap {
+      padding: 0 0 74.25%;
+      height: 0;
+      position: relative;
+      overflow: hidden;
+      .img {
+        @include center();
+        z-index: 9;
+        width: 100%;
+        height: 100%;
+        -webkit-background-size: cover;
+        background-size: cover;
+      }
+    }
+    .installation-title {
+      padding: 17px 80px 17px 26px;
+      position: relative;
+      @include breakpoint(medium) {
+        padding-right: 60px;
+      }
+      svg {
+        @include  center(false,true);
+        right: 25px;
+        z-index: 9;
+        width: 24px;
+        height: 24px;
+      }
+      h2 {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0;
+        @include breakpoint(medium) {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

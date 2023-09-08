@@ -1,0 +1,19 @@
+.me-field-wrap {
+    margin-bottom: 20px;
+  }
+  
+  .me-field-wrap input[type="text"], 
+  .me-field-wrap input[type="email"], 
+  .me-field-wrap input[type="url"], 
+  .me-field-wrap input[type="number"], 
+  .me-field-wrap select {
+      border-spacing: 0;
+      width: 100%;
+      clear: both;
+      margin: 0;
+  }
+  
+  .me-field-wrap label {
+    font-weight: bold;
+  }
+  

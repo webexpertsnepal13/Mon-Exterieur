@@ -1,0 +1,43 @@
+
+// vendors (CSS files from external libraries and frameworks)
+
+@import 'vendors/bootstrap';
+@import 'vendors/slick';
+@import 'vendors/slick-theme';
+@import 'vendors/jquery.mCustomScrollbar';
+
+// abstracts (global variable, function, mixin and placeholder)
+
+@import 'abstracts/mixins';
+@import 'abstracts/variables';
+@import 'abstracts/fonts';
+
+
+// base (boilerplate code)
+
+// @import 'base/reset';
+@import 'base/base';
+
+
+// layout (everything that takes part in laying out the site)
+
+//@import 'layout/layout';
+
+// component (for smaller components like buttons, carousel, widgets, loader)
+@import "components/wp-classes";
+@import "components/navigation";
+@import "components/header";
+@import "components/footer";
+
+
+//page (page-specific styles)
+@import "pages/home";
+@import "pages/nos-realisations";
+@import "pages/livra";
+@import "pages/botique";
+@import "pages/woo";
+@import "pages/installation";
+@import "pages/contact";
+
+//themes
+

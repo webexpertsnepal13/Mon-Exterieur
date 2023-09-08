@@ -1,0 +1,632 @@
+/**
+ * All of the CSS for your public-facing functionality should be
+ * included in this file.
+ *
+ * @format
+ */
+
+/*config*/
+
+section.config-wrapper {
+	padding: 100px 0 !important;
+	z-index: auto;
+}
+section.config-wrapper .cust-row,
+section.config-wrapper .cust-row .row {
+	margin: 0 -7.5px;
+}
+@media (min-width: 992px) {
+	section.config-wrapper .col-lg-5 {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+	section.config-wrapper div[class^='col-'] {
+		padding: 0 7.5px;
+	}
+}
+section.config-wrapper .config-title {
+	margin-bottom: 25px;
+}
+section.config-wrapper .config-title p {
+	color: #959595;
+	font-size: 18px;
+	float: left;
+}
+section.config-wrapper .config-title .right-floating {
+	float: right;
+}
+section.config-wrapper .config-title .right-floating .flag {
+	display: inline-block;
+	margin-right: 22px;
+}
+section.config-wrapper .config-title .right-floating .flag * {
+	vertical-align: top;
+}
+section.config-wrapper .config-title .right-floating .flag strong {
+	line-height: 1.15;
+	font-size: 10px;
+	color: #1f1f1f;
+	display: inline-block;
+}
+section.config-wrapper .config-title .right-floating .flag strong span {
+	display: block;
+	font-size: 8px;
+	color: #6f6c6c;
+}
+section.config-wrapper .config-title .right-floating .rating {
+	display: inline-block;
+	line-height: 1.15;
+	top: -3px;
+	position: relative;
+}
+section.config-wrapper .config-title .right-floating .rating * {
+	vertical-align: top;
+	line-height: 1.15;
+}
+section.config-wrapper .config-title .right-floating .rating > img {
+	margin-right: 22px;
+	width: 30px;
+	height: 30px;
+	top: -3px;
+	position: relative;
+}
+section.config-wrapper .config-title .right-floating .rating > span {
+	display: inline-block;
+	line-height: 1.15;
+}
+section.config-wrapper .config-title .right-floating .rating > span span {
+	font-size: 7px;
+	color: #6f6c6c;
+}
+section.config-wrapper .config-title .right-floating .rating > span > img {
+	display: block;
+}
+section.config-wrapper .config-title .right-floating .rating strong {
+	font-size: 15px;
+}
+section.config-wrapper .config-pro-indv {
+	padding: 10px;
+	background: #fff;
+	border: solid 1px #e2e2e2;
+	-webkit-transition: 0.4s ease-in-out;
+	-moz-transition: 0.4s ease-in-out;
+	transition: 0.4s ease-in-out;
+	-webkit-transform-origin: top center;
+	-moz-transform-origin: top center;
+	transform-origin: top center;
+	margin: 0 0 30px;
+	position: relative;
+}
+section.config-wrapper .config-pro-indv:hover {
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	transform: scale(1.05);
+	box-shadow: 0 3px 40px 0 rgba(0, 0, 0, 0.16);
+}
+section.config-wrapper .config-pro-indv.selected .wc-quantity,
+section.config-wrapper .config-pro-indv.selected .quantity {
+	display: block;
+}
+section.config-wrapper .config-pro-indv .wc-quantity,
+section.config-wrapper .config-pro-indv .quantity {
+	display: none;
+}
+section.config-wrapper .config-pro-indv input[type='radio'] {
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 80%;
+	margin: 0;
+	/*z-index: 9;*/
+	cursor: pointer;
+}
+section.config-wrapper .config-pro-indv .label-inner {
+	position: relative;
+}
+section.config-wrapper .config-pro-indv input[type='radio']:checked + .label-inner:after {
+	content: '';
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	/*z-index: 9;*/
+	background-image: url('../images/confirm.svg');
+	background-color: #fff;
+	border-radius: 50%;
+	background-repeat: no-repeat;
+	background-size: 75%;
+	background-position: center;
+	left: 50%;
+	top: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-moz-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+}
+section.config-wrapper .config-pro-indv > label {
+	display: block;
+	width: 100%;
+	position: relative;
+	cursor: pointer;
+}
+section.config-wrapper .config-pro-indv p {
+	color: #1f1f1f;
+	font-size: 18px;
+	text-align: center;
+	margin: 15px 0;
+}
+section.config-wrapper .config-pro-indv a.me_btn {
+	padding: 12px 0;
+	display: inline-block;
+	width: 100%;
+	background: #fff;
+	border: solid 1px #e2e2e2;
+	font-size: 14px;
+	text-align: center;
+	color: #6f6c6c;
+	text-transform: none;
+}
+section.config-wrapper .config-pro-indv a.me_btn:hover {
+	color: #fff;
+	background: #7daf3f;
+}
+section.config-wrapper .config-pro-indv .img-wrap {
+	height: 0;
+	padding: 0 0 63%;
+	position: relative;
+	overflow: hidden;
+}
+section.config-wrapper .config-pro-indv .img-wrap .img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	/*z-index: 9;*/
+	width: 100%;
+	height: 100%;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+section.config-wrapper .continue {
+	margin-top: 50px;
+}
+section.config-wrapper .continue a.me_btn {
+	padding: 16px 32px;
+	font-weight: bold;
+}
+.config-breadcrumb {
+	background: #fff;
+	border: 1px solid #e2e2e2;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+	margin: 0 0 30px;
+}
+.config-breadcrumb .crumb {
+	position: relative;
+	text-align: center;
+	padding: 14px 0 18px;
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 calc(100% / 6);
+	flex: 0 0 calc(100% / 6);
+	max-width: calc(100% / 6);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	border-width: 5px;
+	border-style: solid;
+	border-color: transparent;
+	border-left: none;
+	border-right: none;
+	border-top: none;
+	min-height: 89px;
+	width: 100%;
+}
+.config-breadcrumb .crumb.step-disabled {
+	cursor: not-allowed;
+	opacity: 0.3;
+}
+
+.config-breadcrumb.four-options .crumb {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 calc(100% / 4);
+	flex: 0 0 calc(100% / 4);
+	max-width: calc(100% / 4);
+}
+.config-breadcrumb.five-options .crumb {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 calc(100% / 5);
+	flex: 0 0 calc(100% / 5);
+	max-width: calc(100% / 5);
+}
+.config-breadcrumb.six-options .crumb {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 calc(100% / 6);
+	flex: 0 0 calc(100% / 6);
+	max-width: calc(100% / 6);
+}
+.config-breadcrumb.seven-options .crumb {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 calc(100% / 7);
+	flex: 0 0 calc(100% / 7);
+	max-width: calc(100% / 7);
+}
+.config-breadcrumb.eight-options .crumb {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 calc(100% / 8);
+	flex: 0 0 calc(100% / 8);
+	max-width: calc(100% / 8);
+}
+.config-breadcrumb.nine-options .crumb {
+	-webkit-box-flex: 0;
+	-ms-flex: 0 0 calc(100% / 9);
+	flex: 0 0 calc(100% / 9);
+	max-width: calc(100% / 9);
+}
+
+.config-breadcrumb.nine-options .crumb > p {
+	font-size: 12px;
+}
+.config-breadcrumb.nine-options .crumb > span {
+	font-size: 10px;
+}
+.config-breadcrumb .crumb.completed {
+	border-color: rgb(125, 175, 63);
+	cursor: pointer;
+}
+.config-breadcrumb .crumb.current {
+	border-color: #4d302b;
+}
+.config-breadcrumb .crumb:first-child.current {
+	/*border-image-source: linear-gradient(to left, #ffffff 3%, #4D302B 2%);*/
+}
+.config-breadcrumb .crumb:not(:first-child) {
+	padding-left: 20px;
+}
+.config-breadcrumb .crumb:not(:last-child):after {
+	content: '';
+	background: url(../images/next-arrow-1.png);
+	background-repeat: no-repeat;
+	background-position: 100% center;
+	height: calc(100% + 5px);
+	position: absolute;
+	right: -18px;
+	top: 0;
+	background-size: cover;
+	width: 20px !important;
+}
+.config-breadcrumb .crumb > p {
+	margin: 0;
+	font-size: 14px;
+	color: #6f6f6c;
+}
+.config-breadcrumb .crumb:not(.completed) > span {
+	display: none;
+}
+.config-breadcrumb .crumb.completed .tick {
+	display: block;
+}
+.config-breadcrumb .crumb .tick {
+	display: none;
+	position: absolute;
+	bottom: -15px;
+	width: 30px;
+	background: #fff;
+	border-radius: 50%;
+	padding: 5px;
+}
+.config-breadcrumb .crumb > span {
+	font-size: 12px;
+	color: #7daf3f;
+	border: solid 1px #7daf3f;
+	border-radius: 12px;
+	padding: 5px 14px;
+	display: inline-block;
+}
+.confiq-num-indv {
+	display: inline-block;
+	margin-right: 20px;
+}
+.confiq-num-indv > label {
+	position: relative;
+	display: inline-block;
+}
+.confiq-num-indv > label span {
+	background: #fff;
+	border: 1px solid #e2e2e2;
+	font-size: 19px;
+	color: #cbcbcb;
+	padding: 10px 30px;
+	display: inline-block;
+	min-width: 112px;
+	-webkit-transition: 0.2s ease-in-out;
+	-moz-transition: 0.2s ease-in-out;
+	transition: 0.2s ease-in-out;
+}
+.confiq-num-indv > label input[type='radio'] {
+	position: absolute;
+	opacity: 0;
+	top: 0;
+	width: 100%;
+	left: 0;
+	height: 100%;
+	/*z-index: 9;*/
+	cursor: pointer;
+}
+.confiq-num-indv > label input[type='radio']:checked + span,
+.confiq-num-indv > label input[type='radio']:hover + span {
+	background: #7daf3f;
+	color: #fff;
+}
+.config-quantity .wc-quantity .quantity-inc .button,
+.config-quantity .quantity .quantity-inc .button {
+	background: #7daf3f;
+}
+.config-step-mobile {
+	padding: 0 7.5px;
+	margin-bottom: 20px;
+}
+.config-step-mobile .count {
+	float: left;
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 1.3;
+	color: #4d302b;
+}
+.config-step-mobile .count span {
+	color: #7e7e7e;
+}
+.config-step-mobile:after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.config-step-mobile > img {
+	float: right;
+}
+h2.show-mobile {
+	font-size: 14px;
+	font-weight: normal;
+	text-align: center;
+	color: #959595;
+	margin: 0 0 20px;
+	font-family: 'pt_sansregular', serif;
+}
+@media (min-width: 768px) {
+	h2.show-mobile,
+	.config-step-mobile {
+		display: none;
+	}
+}
+.confiq-num-indv {
+	width: 14.66%;
+	margin: 0 1%;
+	float: left;
+}
+.confiq-num-indv label,
+.confiq-num-indv label > span {
+	width: 100%;
+}
+.confiq-num-indv label > span {
+	padding: 10px 0;
+	text-align: center;
+	min-width: auto;
+}
+
+@media (max-width: 1024px) {
+	.config-breadcrumb .crumb > p {
+		font-size: 12px;
+	}
+	.config-breadcrumb .crumb > span {
+		font-size: 10px;
+	}
+}
+@media (max-width: 991px) {
+	.confiq-num-indv {
+		width: 31.33%;
+	}
+}
+@media (max-width: 767px) {
+	section.config-wrapper .config-pro-indv:hover {
+		transform: scale(1);
+	}
+	section.config-wrapper .config-pro-indv.with-quantity.selected {
+		padding-bottom: 60px;
+	}
+	section.config-wrapper .config-pro-indv.selected .quantity {
+		position: absolute;
+		width: calc(100% - 20px);
+		margin: 0;
+	}
+	section.config-wrapper .config-pro-indv {
+		margin: 0 0 10px;
+	}
+	section.config-wrapper .config-pro-indv > label {
+		margin: 0;
+	}
+	section.config-wrapper .config-pro-indv a.me_btn {
+		font-size: 14px;
+		width: calc(100% - 60px);
+		padding: 0 0 0 10px;
+		border: none;
+		color: #7daf3f;
+		float: right;
+		position: relative;
+		top: -30px;
+		text-align: left;
+		background: transparent;
+		/*z-index: 9;*/
+	}
+	section.config-wrapper .config-pro-indv .label-inner {
+		min-height: 60px;
+	}
+	section.config-wrapper .config-pro-indv .label-inner:after {
+		content: '';
+		clear: both;
+		display: block;
+	}
+	section.config-wrapper .config-pro-indv input[type='radio']:checked + .label-inner:after {
+		right: -10px;
+		left: auto;
+		-webkit-transform: translate(0, -50%);
+		-moz-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+	}
+	section.config-wrapper .config-pro-indv .label-inner > p {
+		float: left;
+		width: calc(100% - 60px);
+		padding: 0 0 0 10px;
+		text-align: left;
+		margin: 6px 0;
+		font-size: 14px;
+	}
+	section.config-wrapper .config-pro-indv .img-wrap {
+		width: 60px;
+		padding: 0 0 60px;
+		float: left;
+	}
+	section.config-wrapper .continue {
+		margin-top: 20px;
+	}
+	.config-title,
+	#configure-steps-breadcrumb {
+		display: none;
+	}
+	section.config-wrapper {
+		padding: 20px 0 40px !important;
+	}
+	#configure-options {
+		border-radius: 5px;
+		border: solid 1px #e2e2e2;
+		background-color: #ffffff;
+		padding: 20px 10px;
+	}
+}
+@media (max-width: 575px) {
+	.confiq-num-indv {
+		width: 48%;
+	}
+	.config-quantity .wc-quantity,
+	.config-quantity .quantity {
+		width: 100%;
+		margin: 0;
+	}
+}
+@media (max-width: 374px) {
+	.confiq-num-indv {
+		width: 100%;
+		margin: 0;
+	}
+	section.config-wrapper .config-pro-indv input[type='radio']:checked + .label-inner:after {
+		right: -10px;
+		left: auto;
+		top: 10px;
+		-webkit-transform: translate(0, -50%);
+		-moz-transform: translate(0, -50%);
+		transform: translate(0, -50%);
+		width: 20px;
+		height: 20px;
+	}
+}
+.config-quantity {
+	margin: 0 0 10px;
+}
+.quantity-inc {
+	-moz-user-select: none;
+	-webkit-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+.config-quantity .wc-quantity .quantity-inc input.input,
+.config-quantity .quantity .quantity-inc input.input {
+	margin: 0;
+}
+
+/*popup*/
+.modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	padding-top: 0; /* Location of the box */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content */
+.modal-content {
+	background: transparent !important;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-orient: initial !important;
+	-webkit-box-direction: initial !important;
+	-ms-flex-direction: initial !important;
+	flex-direction: initial !important;
+	height: 100%;
+}
+.modal-content .modal-wrap {
+	background: #fff;
+	width: 1080px;
+	margin: 0 auto;
+	max-width: 100%;
+	padding: 50px;
+	max-height: 80vh;
+	overflow: auto;
+	-ms-overflow-style: none; /* IE 11 */
+	scrollbar-width: none;
+	position: relative;
+}
+.modal-content .modal-wrap::-webkit-scrollbar {
+	display: none;
+}
+.modal-content {
+	background-color: #fefefe;
+	margin: auto;
+	padding: 20px;
+	border: 1px solid #888;
+	width: 80%;
+}
+/* The Close Button */
+.close {
+	color: #aaaaaa;
+	float: right;
+	font-size: 28px;
+	font-weight: bold;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	/*z-index: 9;*/
+}
+.close:hover,
+.close:focus {
+	color: #000;
+	text-decoration: none;
+	cursor: pointer;
+}
+
+@media (max-width: 991px) {
+	.modal-content .modal-wrap {
+		padding: 20px;
+	}
+}

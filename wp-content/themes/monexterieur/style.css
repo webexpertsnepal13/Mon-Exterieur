@@ -1,0 +1,123 @@
+/*!
+Theme Name: Mon Exterieur
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.01
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: monexterieur
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+Mon Exterieur is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+
+
+/* product cart */
+body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item::before {
+	content: none;
+}
+body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-thumbnail {
+	flex: 0 0 8%;
+	max-width: 8%;
+	height: unset;
+	width: unset;
+}
+body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-name {
+	flex: 0 0 23%;
+	max-width: 23%;
+}
+body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-quantity {
+	flex: 0 0 32%;
+	max-width: 32%;
+}
+body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-subtotal,
+body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-price {
+	flex: 0 0 13%;
+	max-width: 13%;
+}
+body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-weight {
+	flex: 0 0 6%;
+	max-width: 6%;
+}
+body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item > div.product-remove {
+	flex: 0 0 5%;
+	max-width: 5%;
+}
+@media screen and (max-width: 1199px) {
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-quantity > span {
+		display: block;
+		text-align: center;
+	}
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-quantity .wc-quantity, .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-quantity .quantity {
+		width: 100% !important;
+		padding: 0 !important;
+		margin-top: 5px !important;
+	}
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-name {
+		flex: 0 0 20%;
+		max-width: 20%;
+	}
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-weight {
+		flex: 0 0 9%;
+		max-width: 9%;
+	}
+}
+@media screen and (max-width: 767px) {
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-remove {
+		flex: unset !important;
+		max-width: unset !important;
+		width: 34px;
+	}
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-quantity {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-thumbnail {
+		flex: 0 0 60px;
+		max-width: 60px;
+	}
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-name {
+		flex: 0 0 calc(100% - 60px);
+		max-width: calc(100% - 60px);
+	}
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-price,
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-subtotal,
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-weight {
+		flex: 0 0 33.33%;
+		max-width: 33.33%;
+		border-top: 1px solid #c4c4c4;
+	}
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-weight {
+		border-left: 1px solid #c4c4c4;
+		padding: 10px !important;
+	}
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-quantity > span {
+		text-align: left;
+	}
+}
+@media screen and (max-width: 479px) {
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-price,
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-subtotal,
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-weight {
+		flex: 0 0 100%;
+		max-width: 100%;
+		border-top: 1px solid #c4c4c4;
+		border-left: 0 !important;
+		text-align: center;
+		padding: 10px !important;
+		margin-top: 0 !important;
+	}
+	body .custom-cart-form div.shop_table .tbody-custom .woocommerce-cart-form__cart-item .product-weight {
+		/* border-left: 0;; */
+	}
+}

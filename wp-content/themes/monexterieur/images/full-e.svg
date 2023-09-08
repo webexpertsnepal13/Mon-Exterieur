@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 24.1.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="252" height="219" viewBox="0 0 252 219">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.462" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#4d302b"/>
+      <stop offset="1" stop-color="#653d36"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rectangle_44" data-name="Rectangle 44" width="252" height="219" transform="translate(-0.346 -0.373)" fill="url(#linear-gradient)"/>
+    </clipPath>
+  </defs>
+  <g id="Mask_Group_2" data-name="Mask Group 2" transform="translate(0.346 0.373)" clip-path="url(#clip-path)">
+    <g id="Group_23" data-name="Group 23" transform="translate(-52.278 40.495) rotate(-16)">
+      <path id="Path_58" data-name="Path 58" d="M129.759,35.068,129.586.641,0,0,.173,34.428l129.586.641Z" transform="translate(0.002 0)" fill="#7daf3f"/>
+      <path id="Path_59" data-name="Path 59" d="M129.978,78.23l-92.141-.455-.227-45.1,92.141.455L129.588.641,62.084.307h0L0,0,.563,112.02l129.588.641Z" transform="translate(0.392 78.073)" fill="#7daf3f"/>
+    </g>
+  </g>
+</svg>

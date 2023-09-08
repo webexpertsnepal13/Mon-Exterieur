@@ -1,0 +1,103 @@
+footer#colophon {
+  background: #fff;
+  padding: 49px 0 62px;
+  @include breakpoint(small) {
+    padding: 29px 0 100px;
+  }
+  > .container {
+    position: relative;
+    &:before {
+      content: '';
+      @include center(false,false);
+      top: -59px;
+      width: calc(100% - 30px);
+      background: $theme_primary;
+      height: 10px;
+      left: 15px;
+      @include breakpoint(small) {
+        top: -39px;
+        left: 30px;
+        width: calc(100% - 60px);
+      }
+    }
+  }
+  .widget {
+    @include breakpoint(small) {
+      margin-bottom: 30px;
+    }
+  }
+  .widget_media_image {
+    @media(min-width: 992px) {
+      flex-grow: 2!important;
+    }
+    img {
+      width: 280px;
+      max-width: 100%;
+      height: auto;
+      @include breakpoint(small) {
+        width: 150px;
+      }
+    }
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  p,a {
+    font-size: 14px;
+    color: #6f6c6c;
+    margin: 0 0 12px;
+  }
+  strong {
+    margin-bottom: 7px;
+    display: block;
+    font-size: 14px;
+    color: #1f1f1f;
+    font-weight: normal;
+  }
+  small {
+    display: block;
+    color: #1f1f1f;
+  }
+  a {
+    &:focus,
+    &:visited {
+      color: #6f6c6c;
+    }
+    color: #6f6c6c;
+    &:hover {
+      color: $theme_primary;
+      &:focus,
+      &:visited {
+        color: $theme_primary
+      }
+    }
+  }
+  h3.widget-title {
+    font-size: 18px;
+    color: #1f1f1f;
+    margin: 10px 0 29px;
+  }
+  i.clock {
+    width: 19px;
+    height: 19px;
+    display: inline-block;
+    margin-right: 15px;
+    background-image: url('../../images/time.svg');
+    -webkit-background-size: contain;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    top: 5px;
+  }
+  .col-sm {
+    flex-basis: auto;
+    @media (min-width: 768px) {
+      flex-basis: 0;
+      flex-grow: 1;
+      max-width: 100%;
+    }
+  }
+}
